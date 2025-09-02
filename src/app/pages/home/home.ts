@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { Breadcrumb } from '../../layout/breadcrumb/breadcrumb';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-home',
-  imports: [Breadcrumb],
+  imports: [Breadcrumb, RouterModule],
   templateUrl: './home.html',
   styleUrl: './home.css'
 })
