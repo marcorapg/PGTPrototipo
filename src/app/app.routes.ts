@@ -8,5 +8,6 @@ import { Criarsolicitacao } from './pages/autoservico/criarsolicitacao/criarsoli
 export const routes: Routes = [
   { path: '', component: Home },
   { path: 'autoservico', component: Autoservico },
-  { path: 'autoservico/criarsolicitacao', component: Criarsolicitacao }
+  { path: 'autoservico/criarsolicitacao', component: Criarsolicitacao },
+  { path: '**', redirectTo: '' } // optional fallback
 ];
