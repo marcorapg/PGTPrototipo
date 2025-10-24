@@ -1,177 +1,245 @@
 <app-breadcrumb [breadcrumbs]="pageBreadcrumbs"></app-breadcrumb>
 
-<style>
-  .wizard-sample-1 {
-    width: 100%;
-  }
-</style>
-<div class="wizard-sample-1">
-  <div class="br-wizard" collapsed="collapsed" step="1">
-    <div class="wizard-progress" role="tablist">
-      <button class="wizard-progress-btn" type="button" aria-labelledby="info1" role="tab" aria-controls="tab1"
-        title="Dados Pessoais"><span class="info" id="info1">Dados Pessoais</span></button>
-      <button class="wizard-progress-btn" type="button" aria-labelledby="info2" role="tab" aria-controls="tab2"
-        title="Validar Dados" active="active"><span class="info" id="info2">Validar Dados</span></button>
-      <button class="wizard-progress-btn" type="button" aria-labelledby="info3" role="tab" aria-controls="tab3"
-        title="Habilitar Cadastro" active="active"><span class="info" id="info3">Habilitar Cadastro</span></button>
-      <button class="wizard-progress-btn" type="button" aria-labelledby="info4" role="tab" aria-controls="tab4"
-        title="Cadastrar Senha" active="active"><span class="info" id="info4">Cadastrar Senha</span></button>
-      <button class="wizard-progress-btn" type="button" aria-labelledby="info5" role="tab" aria-controls="tab5"
-        title="Finalizar Cadastro" disabled="disabled"><span class="info">Finalizar</span></button>
-    </div>
-    <div class="wizard-form">
-      <div class="wizard-panel" active="active" role="tabpanel" id="tab1">
-        <div class="wizard-panel-content" tabindex="0">
-          <div class="h3">Dados Pessoais</div>
-          <div class="text">Conteúdo do passo 1 - Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. </div>
-        </div>
-        <div class="wizard-panel-btn">
-          <button class="br-button wizard-btn-canc" type="button">Cancelar
-          </button>
-          <button class="br-button primary wizard-btn-next" type="button" aria-description="Passo 2 de 5 Validar Dados">
-            Avançar
-          </button>
-        </div>
+<h3>Incluir requerimento</h3>
+<div class="main-content pl-sm-3 mt-4" id="main-content">
+  <div class="wizard-sample-1">
+    <div class="br-wizard" collapsed="collapsed" step="1">
+      <div class="wizard-progress" role="tablist">
+        <button class="wizard-progress-btn" type="button" aria-labelledby="info1" role="tab" aria-controls="tab1"
+          title="Identificação do beneficiário"><span class="info" id="info1">Identificação do
+            beneficiário</span></button>
+        <button class="wizard-progress-btn" type="button" aria-labelledby="info2" role="tab" aria-controls="tab2"
+          title="Seleção do serviço" disabled="disabled" active="active"><span class="info" id="info2">Seleção do
+            serviço</span></button>
+        <button class="wizard-progress-btn" type="button" aria-labelledby="info3" role="tab" aria-controls="tab3"
+          title="Dados do serviço" disabled="disabled" active="active"><span class="info" id="info3">Dados do
+            serviço</span></button>
       </div>
-      <div class="wizard-panel" role="tabpanel" id="tab2">
-        <div class="wizard-panel-content" tabindex="0">
-          <div class="h3">Validar Dados</div><a href="https://gov.br/ds" alt="ir para o gov.br teste focus">ir para
-            gov.br/ds teste focus</a>
-          <div class="text">Conteúdo do passo 2 - Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-            printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five
-            centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
-            popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-            recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum
-            is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-            dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-            type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
-            containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
-            including versions of Lorem Ipsum. Conteúdo aqui - Lorem Ipsum is simply dummy text of the printing and
-            typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-            unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
-            popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-            recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum
-            is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-            dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-            type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
-            containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
-            including versions of Lorem Ipsum. Conteúdo aqui - Lorem Ipsum is simply dummy text of the printing and
-            typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-            unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
-            popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-            recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum
-            is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-            dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-            type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
-            containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
-            including versions of Lorem Ipsum. Conteúdo aqui - Lorem Ipsum is simply dummy text of the printing and
-            typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-            unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
-            popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-            recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum
-            is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-            dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-            type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
-            containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
-            including versions of Lorem Ipsum.</div>
+      <div class="wizard-form">
+        <div class="wizard-panel" active="active" role="tabpanel" id="tab1">
+          <div class="wizard-panel-content" tabindex="0">
+            <div class="h3">Identificação do beneficiário</div>
+            <div class="text">
+              Informe o CPF do beneficiário solicitante do serviço.
+            </div>
+
+            <!-- Linha: CPF + botão -->
+            <div class="row mb-3">
+              <div class="col-sm-4 col-lg-2">
+                <div class="br-input">
+                  <label for="input-icon">CPF</label>
+                  <div class="input-group">
+                    <div class="input-icon">
+                      <i class="fas fa-user-tie" aria-hidden="true"></i>
+                    </div>
+                    <input id="input-icon" type="text" placeholder="000.000.000-00" mask="000.000.000-00"
+                      [(ngModel)]="cpf" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto d-flex align-items-end">
+                <button class="br-button circle primary" type="button" (click)="pesquisarCPF()"
+                  aria-label="Pesquisar CPF">
+                  <i class="fas fa-search" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <!-- Feedback -->
+              <div class="mb-3" [hidden]="exibirErroNaoEncontrato">
+                <span class="feedback danger" role="alert">
+                  <i class="fas fa-times-circle" aria-hidden="true"></i>
+                  Benefiário não encontrado
+                </span>
+              </div>
+            </div>
+
+            <!-- Outro input -->
+            <div class="row">
+              <div class="col-sm-6 col-lg-12 mb-3" [hidden]="exibirBeneficiarioEncontrado">
+                <div class="br-input">
+                  <label for="input-default">Beneficiário selecionado</label>
+                  <input id="input-default" type="text" value="Jorge Freitas Silva" disabled="disabled" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wizard-panel-btn">
+            <a routerLink="/autoservico"><button class="br-button wizard-btn-canc" type="button">Cancelar
+              </button></a>
+            <button class="br-button primary wizard-btn-next" type="button"
+              aria-description="Passo 2 de 5 Validar Dados">
+              Avançar
+            </button>
+          </div>
         </div>
-        <div class="wizard-panel-btn">
-          <button class="br-button wizard-btn-canc" type="button">Cancelar
-          </button>
-          <button class="br-button primary wizard-btn-next" type="button"
-            aria-description="Passo 3 de 5 Habilitar Cadastro"> Avançar
-          </button>
-          <button class="br-button secondary wizard-btn-prev" type="button"
-            aria-description="Passo 1 de 5 Dados Pessoais">Voltar
-          </button>
+        <div class="wizard-panel" role="tabpanel" id="tab2">
+          <div class="wizard-panel-content" tabindex="0">
+            <div class="h3">Seleção do serviço</div>
+            <div class="text mt-5 mb-2">
+              Selecione o registro de assentamento para o qual deseja solicitar o serviço
+            </div>
+            <div class="br-table" data-search="data-search" data-selection="data-selection"
+              data-collapse="data-collapse" data-random="data-random">
+              <div class="table-header">
+                <div class="top-bar">
+                  <div class="table-title">Registros de assentamento</div>
+                </div>
+              </div>
+              <table>
+                <caption>Registros de assentamento</caption>
+                <thead>
+                  <tr>
+                    <th class="column-checkbox" scope="col">
+                    </th>
+                    <th scope="col">Código do Beneficiário</th>
+                    <th scope="col">CPF do Titular</th>
+                    <th scope="col">Nome do Titular</th>
+                    <th scope="col">Projeto de assentamento</th>
+                    <th scope="col">Situação</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="br-radio">
+                        <input id="op-1" type="radio" name="radio" value="1" />
+                        <label for="op-1"></label>
+                      </div>
+                    </td>
+                    <td data-th="Título coluna 1">08979513246</td>
+                    <td data-th="Título coluna 2">111.111.111-11</td>
+                    <td data-th="Título coluna 3">Jorge Freitas Silva</td>
+                    <td data-th="Título coluna 4">Projeto de Assentamento de Salvador</td>
+                    <td data-th="Título coluna 5">Assentado</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="br-radio">
+                        <input id="op-2" type="radio" name="radio" value="2" />
+                        <label for="op-2"></label>
+                      </div>
+                    </td>
+                    <td data-th="Título coluna 1">6345345345</td>
+                    <td data-th="Título coluna 2">111.111.111-11</td>
+                    <td data-th="Título coluna 3">Jorge Freitas Silva</td>
+                    <td data-th="Título coluna 4">Projeto de Assentamento de Porto Alegre</td>
+                    <td data-th="Título coluna 5">Evadido</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="br-radio">
+                        <input id="op-3" type="radio" name="radio" value="3" />
+                        <label for="op-3"></label>
+                      </div>
+                    </td>
+                    <td data-th="Título coluna 1">13123134125</td>
+                    <td data-th="Título coluna 2">111.111.111-11</td>
+                    <td data-th="Título coluna 3">Jorge Freitas Silva</td>
+                    <td data-th="Título coluna 4">Projeto de Assentamento de Natal</td>
+                    <td data-th="Título coluna 5">Evadido</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Select opção serviço -->
+            <!-- - Transferência de Assentamento 
+            - Desbloqueio 
+            - Atualização de cônjuge 
+            - Atualização de dados pessoais 
+            - Atualização de situação -->
+            <div class="row">
+              <div class="col-sm-12 col-lg-12 mt-4">
+                <div class="br-select">
+                  <div class="br-input">
+                    <label for="select-servico">Selecione o serviço desejado:</label>
+                    <input id="select-servico" type="text" placeholder="Selecione o item" />
+                    <button class="br-button" type="button" aria-label="Exibir lista" tabindex="-1"
+                      data-trigger="data-trigger"><i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <div class="br-list" tabindex="0">
+                    <div class="br-item" tabindex="-1">
+                      <div class="br-radio">
+                        <input id="rb0" type="radio" name="estados-simples" value="rb0" />
+                        <label for="rb0">Transferência de assentamento</label>
+                      </div>
+                    </div>
+                    <div class="br-item" tabindex="-1">
+                      <div class="br-radio">
+                        <input id="rb1" type="radio" name="estados-simples" value="rb1" />
+                        <label for="rb1">Desbloqueio</label>
+                      </div>
+                    </div>
+                    <div class="br-item" tabindex="-1">
+                      <div class="br-radio">
+                        <input id="rb2" type="radio" name="estados-simples" value="rb2" />
+                        <label for="rb2">Atualização de unidade familiar</label>
+                      </div>
+                    </div>
+                    <div class="br-item" tabindex="-1">
+                      <div class="br-radio">
+                        <input id="rb3" type="radio" name="estados-simples" value="rb3" />
+                        <label for="rb3">Atualização de dados pessoais</label>
+                      </div>
+                    </div>
+                    <div class="br-item" tabindex="-1">
+                      <div class="br-radio">
+                        <input id="rb4" type="radio" name="estados-simples" value="rb4" />
+                        <label for="rb4">Atualização de situação</label>
+                      </div>
+                    </div>
+                    <div class="br-item" tabindex="-1">
+                      <div class="br-radio">
+                        <input id="rb5" type="radio" name="estados-simples" value="rb5" />
+                        <label for="rb5">Emitir espelho</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="wizard-panel-btn">
+            <a routerLink="/autoservico"><button class="br-button wizard-btn-canc" type="button">Cancelar
+              </button>
+            </a>
+            <button class="br-button primary wizard-btn-next" type="button"
+              aria-description="Passo 3 de 5 Habilitar Cadastro"> Avançar
+            </button>
+            <button class="br-button secondary wizard-btn-prev" type="button"
+              aria-description="Passo 1 de 5 Dados Pessoais">Voltar
+            </button>
+          </div>
         </div>
-      </div>
-      <div class="wizard-panel" role="tabpanel" id="tab3">
-        <div class="wizard-panel-content" tabindex="0">
-          <div class="h3">Habilitar Cadastro</div>
-          <div class="text"> Conteúdo do passo 3 - Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-            printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five
-            centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
-            popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-            recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum
-            is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-            dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-            type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
-            containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
-            including versions of Lorem Ipsum.</div>
-        </div>
-        <div class="wizard-panel-btn">
-          <button class="br-button wizard-btn-canc" type="button">Cancelar
-          </button>
-          <button class="br-button primary wizard-btn-next" type="button"
-            aria-description="Passo 4 de 5 Cadastrar Senha"> Avançar
-          </button>
-          <button class="br-button secondary wizard-btn-prev" type="button"
-            aria-description="Passo 2 de 5 Validar Dados">Voltar
-          </button>
-        </div>
-      </div>
-      <div class="wizard-panel" role="tabpanel" id="tab4">
-        <div class="wizard-panel-content" tabindex="0">
-          <div class="h3">Cadastrar Senha</div>
-          <div class="text">Conteúdo do passo 4 - Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-            printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five
-            centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
-            popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-            recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum
-            is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-            dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-            type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
-            containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
-            including versions of Lorem Ipsum.</div>
-        </div>
-        <div class="wizard-panel-btn">
-          <button class="br-button wizard-btn-canc" type="button">Cancelar
-          </button>
-          <button class="br-button primary wizard-btn-next" type="button" aria-description="Passo 5 de 5 Finalizar">
-            Avançar
-          </button>
-          <button class="br-button secondary wizard-btn-prev" type="button"
-            aria-description="Passo 3 de 5 Habilitar Cadastro">Voltar
-          </button>
-        </div>
-      </div>
-      <div class="wizard-panel" role="tabpanel" id="tab5">
-        <div class="wizard-panel-content" tabindex="0">
-          <div class="h3">Finalizar</div>
-          <div class="text">Conteúdo do passo 5 - Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-            printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five
-            centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
-            popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-            recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem
-            Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-            make a type specimen book. It has survived not only five centuries, but also the leap into electronic
-            typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
-            sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.</div>
-        </div>
-        <div class="wizard-panel-btn">
-          <button class="br-button wizard-btn-canc" type="button">Cancelar
-          </button>
-          <button class="br-button primary wizard-btn" type="button">Concluir
-          </button>
-          <button class="br-button secondary wizard-btn-prev" type="button">Voltar
-          </button>
+        <div class="wizard-panel" role="tabpanel" id="tab3">
+          <div class="wizard-panel-content" tabindex="0">
+
+            <app-transferenciaassentamento [hidden]="esconderTransferenciaAssentamento"></app-transferenciaassentamento>
+            <app-desbloqueio [hidden]="esconderDesbloqueio"></app-desbloqueio>
+            <app-atualizacaounidadefamiliar
+              [hidden]="esconderAtualizacaoUnidadeFamiliar"></app-atualizacaounidadefamiliar>
+            <app-atualizacaodadospessoais [hidden]="esconderAtualizacaoDadosPessoais"></app-atualizacaodadospessoais>
+            <app-atualizacaosituacao [hidden]="esconderAtualizacaoSituacao"></app-atualizacaosituacao>
+            <app-emitirespelho [hidden]="esconderEmitirEspelho"></app-emitirespelho>
+
+          </div>
+          <div class="wizard-panel-btn">
+            <a routerLink="/autoservico"><button class="br-button wizard-btn-canc" type="button">Cancelar
+              </button>
+            </a>
+            @if(esconderEmitirEspelho) {
+            <a routerLink="/autoservico/solicitacaogerada"><button class="br-button primary wizard-btn" type="button"
+                aria-description="Passo 4 de 5 Cadastrar Senha"> Finalizar
+              </button></a>
+            <button class="br-button secondary wizard-btn-prev" type="button"
+              aria-description="Passo 2 de 5 Validar Dados">Voltar
+            </button>
+            }
+          </div>
         </div>
       </div>
     </div>

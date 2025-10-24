@@ -1,0 +1,59 @@
+<app-breadcrumb [breadcrumbs]="pageBreadcrumbs"></app-breadcrumb>
+
+<h3>Autosserviço: Requerimento criado com sucesso</h3>
+
+<div class="d-flex align-items-center">
+    <!-- Imagem -->
+    <img src="assets/images/pessoa.png" alt="Ilustração" class="mr-3" style="width: 200px; height: 200px;" />
+
+    <!-- Texto -->
+    <p class="mb-0">
+        O requerimento de serviço para <strong>Jorge Freitas Silva</strong> foi criado com sucesso.
+    </p>
+</div>
+
+
+
+<div class="row">
+    <div class="col-md">
+        <div class="br-card hover">
+            <div class="card-content">
+                <div class="br-table" title="Dados da solicitação criada">
+                    <div class="table-header">
+                        <div class="top-bar">
+                            <div class="table-title">Dados do requerimento criado</div>
+                            <div class="actions-trigger text-nowrap">
+                            </div>
+                        </div>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="border-right border-left" scope="col">Número do requerimento</th>
+                                <th class="border-right border-left" scope="col">Tipo do serviço</th>
+                                <th class="border-right border-left" scope="col">Data do requerimento</th>
+                                <th class="border-right border-left" scope="col">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="border-right border-left">009123547</td>
+                                <td class="border-right border-left">Desbloqueio</td>
+                                <td class="border-right border-left">11/09/2025</td>
+                                <td class="border-right border-left">Processada</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="col-12 mt-3 text-right">
+    <a routerLink="/autoservico/acompanharsolicitacoes"><button class="br-button primary mr-3"
+            type="button">Acompanhar requerimentos</button></a>
+</div>

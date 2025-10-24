@@ -1,0 +1,325 @@
+@if(exibirEdicao) {
+
+<div id="divAtualizacaoSituacao">
+    <div class="h3">Atualização de situação</div>
+
+    <!-- Card Identificação -->
+    <div class="row mb-3 mt-3">
+        <div class="col-12">
+            <div class="subtitulo">
+                Identificação
+                <button class="btn-icone" type="button" aria-label="Ajuda">
+                    <i class="fas fa-info"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="br-card">
+                <div class="card-content">
+
+                    <div class="row mb-3 mt-3">
+
+                        <div class="col-3">
+                            <div class="br-input">
+                                <label for="input-default">Código do beneficiário</label>
+                                <input id="input-default" type="text" value="08979513246" disabled="disabled" />
+                            </div>
+                        </div>
+
+                        <div class="col-3">
+                            <div class="br-input">
+                                <label for="cpfTitular">CPF do titular</label>
+                                <input id="cpfTitular" type="text" value="111.111.111-11" disabled />
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="br-input">
+                                <label for="nomeTitular">Nome do titular</label>
+                                <input id="nomeTitular" type="text" value="Jorge Freitas Silva" disabled />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3 mt-3">
+                        <div class="col-sm-3 col-lg-3">
+                            <div class="br-input">
+                                <label for="nomeTitular">Situação no assentamento atual</label>
+                                <input id="nomeTitular" type="text" value="Desistente" disabled />
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-lg-3">
+                            <!-- [html-validate-disable input-attributes]-->
+                            <div class="br-datetimepicker" data-mode="single" data-type="text">
+                                <div class="br-input has-icon">
+                                    <label for="simples-input2">Data da situação atual</label>
+                                    <input id="simples-input2" type="text" placeholder="" data-input="data-input"
+                                        value="02/05/2021" disabled />
+                                    <button class="br-button circle small" type="button" aria-label="Abrir Timepicker"
+                                        data-toggle="data-toggle" id="simples-input-btn2" tabindex="-1"
+                                        aria-hidden="true"><i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-6">
+                            <div class="br-input">
+                                <label for="nomeTitular">Nome do projeto</label>
+                                <input id="nomeTitular" type="text" value="Projeto de assentamento de Caxambú"
+                                    disabled />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card Situação -->
+    <div class="row mb-3 mt-3">
+        <div class="col-12">
+            <div class="subtitulo">
+                Situação
+                <button class="btn-icone" type="button" aria-label="Ajuda">
+                    <i class="fas fa-info"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="br-card">
+                <div class="card-content">
+                    <div class="row mb-5">
+
+                        <div class="col-sm-8 col-lg-4">
+                            <div class="br-select">
+                                <div class="br-input">
+                                    <label for="situacaoAssentamento">Situação no assentamento</label>
+                                    <input id="situacaoAssentamento" type="text" placeholder="Selecione o item" />
+                                    <button class="br-button" type="button" aria-label="Exibir lista" tabindex="-1"
+                                        data-trigger="data-trigger"><i class="fas fa-angle-down" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div class="br-list" tabindex="0">
+                                    <div class="br-item" tabindex="-1">
+                                        <div class="br-radio">
+                                            <input id="situacaoAssentamento1" type="radio"
+                                                name="estados-situacaoAssentamento" value="situacaoAssentamento1" />
+                                            <label for="situacaoAssentamento1">Desistente</label>
+                                        </div>
+                                    </div>
+                                    <div class="br-item" tabindex="-1">
+                                        <div class="br-radio">
+                                            <input id="situacaoAssentamento2" type="radio"
+                                                name="estados-situacaoAssentamento" value="situacaoAssentamento2" />
+                                            <label for="situacaoAssentamento2">Evadido</label>
+                                        </div>
+                                    </div>
+                                    <div class="br-item" tabindex="-1">
+                                        <div class="br-radio">
+                                            <input id="situacaoAssentamento3" type="radio"
+                                                name="estados-situacaoAssentamento" value="situacaoAssentamento3" />
+                                            <label for="situacaoAssentamento3">Assentado</label>
+                                        </div>
+                                    </div>
+                                    <div class="br-item" tabindex="-1">
+                                        <div class="br-radio">
+                                            <input id="situacaoAssentamento4" type="radio"
+                                                name="estados-situacaoAssentamento" value="situacaoAssentamento4" />
+                                            <label for="situacaoAssentamento4">Titulado</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-8 col-lg-4">
+                            <!-- [html-validate-disable input-attributes]-->
+                            <div class="br-datetimepicker" data-mode="single" data-type="text">
+                                <div class="br-input has-icon">
+                                    <label for="simples-input2">Data da situação</label>
+                                    <input id="simples-input2" type="text" placeholder="" data-input="data-input"
+                                        value="" />
+                                    <button class="br-button circle small" type="button" aria-label="Abrir Timepicker"
+                                        data-toggle="data-toggle" id="simples-input-btn2" tabindex="-1"
+                                        aria-hidden="true"><i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-8 col-lg-4">
+                            <div class="br-select">
+                                <div class="br-input">
+                                    <label for="situacaoAssentamentoMotivo">Motivo</label>
+                                    <input id="situacaoAssentamentoMotivo" type="text" placeholder="Selecione o item" />
+                                    <button class="br-button" type="button" aria-label="Exibir lista" tabindex="-1"
+                                        data-trigger="data-trigger"><i class="fas fa-angle-down" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div class="br-list" tabindex="0">
+                                    <div class="br-item" tabindex="-1">
+                                        <div class="br-radio">
+                                            <input id="situacaoAssentamentoMotivo1" type="radio"
+                                                name="estados-situacaoAssentamentoMotivo"
+                                                value="situacaoAssentamentoMotivo1" />
+                                            <label for="situacaoAssentamentoMotivo1">Motivo 1</label>
+                                        </div>
+                                    </div>
+                                    <div class="br-item" tabindex="-1">
+                                        <div class="br-radio">
+                                            <input id="situacaoAssentamentoMotivo2" type="radio"
+                                                name="estados-situacaoAssentamentoMotivo"
+                                                value="situacaoAssentamentoMotivo2" />
+                                            <label for="situacaoAssentamentoMotivo2">Motivo 2</label>
+                                        </div>
+                                    </div>
+                                    <div class="br-item" tabindex="-1">
+                                        <div class="br-radio">
+                                            <input id="situacaoAssentamentoMotivo3" type="radio"
+                                                name="estados-situacaoAssentamentoMotivo"
+                                                value="situacaoAssentamentoMotivo3" />
+                                            <label for="situacaoAssentamentoMotivo3">Motivo 3</label>
+                                        </div>
+                                    </div>
+                                    <div class="br-item" tabindex="-1">
+                                        <div class="br-radio">
+                                            <input id="situacaoAssentamentoMotivo4" type="radio"
+                                                name="estados-situacaoAssentamentoMotivo"
+                                                value="situacaoAssentamentoMotivo4" />
+                                            <label for="situacaoAssentamentoMotivo4">Motivo 4</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="br-checkbox">
+                                <input id="checkbox-1" name="checkbox-1" type="checkbox" aria-label="opção 1" />
+                                <label for="checkbox-1">Aceito que ao alegar que a situação no assentamento é Desistente
+                                    perderei direitos sobre o contrato de assentamento.</label>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+}
+
+@if(!exibirEdicao) {
+
+<div id="divAtualizacaoSituacao">
+    <div class="h3">Atualização de situação</div>
+
+    <!-- Card Identificação -->
+    <div class="row mb-3 mt-3">
+        <div class="col-12">
+            <div class="subtitulo">
+                Identificação
+                <button class="btn-icone" type="button" aria-label="Ajuda">
+                    <i class="fas fa-info"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="br-card">
+                <div class="card-content">
+                    <div class="row mt-2 mb-2">
+                        <div class="col-sm-3 col-lg-3">
+                            <label>Código do beneficiário</label>
+                            <p>08979513246</p>
+                        </div>
+
+                        <div class="col-sm-3 col-lg-3">
+                            <label>CPF do titular</label>
+                            <p>111.111.111-11</p>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-6">
+                            <label>Nome do titular</label>
+                            <p>Jorge Freitas Silva</p>
+                        </div>
+                    </div>
+                    <div class="row mt-2 mb-2">
+                        <div class="col-sm-3 col-lg-3">
+                            <label>Situação no assentamento atual</label>
+                            <p>Desistente</p>
+                        </div>
+
+                        <div class="col-sm-3 col-lg-3">
+                            <label>Data da situação atual</label>
+                            <p>02/01/2023</p>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-6">
+                            <label>Nome do projeto</label>
+                            <p>Projeto de assentamento de Caxambú</p>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card Situação -->
+    <div class="row mb-3 mt-3">
+        <div class="col-12">
+            <div class="subtitulo">
+                Situação
+                <button class="btn-icone" type="button" aria-label="Ajuda">
+                    <i class="fas fa-info"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="br-card">
+                <div class="card-content">
+                    <div class="row mt-2 mb-2">
+
+                        <div class="col-sm-4 col-lg-4">
+                            <label for="situacaoAssentamento">Situação no assentamento</label>
+                            <p>Evadido</p>
+                        </div>
+
+                        <div class="col-sm-4 col-lg-4">
+                            <label for="simples-input2">Data da situação</label>
+                            <p>16/02/2023</p>
+                        </div>
+
+                        <div class="col-sm-4 col-lg-4">
+                            <label for="situacaoAssentamentoMotivo">Motivo</label>
+                            <p>Motivo 1</p>
+                        </div>
+                    </div>
+
+                    <div class="row mt-5 mb-2">
+                        <div class="col-12">
+                            <div class="br-checkbox checked">
+                                <input id="checkbox-1" name="checkbox-1" type="checkbox" aria-label="opção 1" disabled
+                                    checked />
+                                <label for="checkbox-1">Aceito que ao alegar que a situação no assentamento é
+                                    Desistente perderei direitos sobre o contrato de assentamento.</label>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+}

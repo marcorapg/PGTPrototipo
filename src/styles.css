@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+.subtitulo {
+    font-size: 1.2rem;
+    /* fonte maior */
+    font-weight: bold;
+    /* mais grossa */
+    color: purple;
+    /* cor roxa */
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    /* espaço entre texto e botão */
+}
+
+.btn-icone {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: purple;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn-icone i {
+    color: white;
+    font-size: 0.9rem;
+    line-height: 1;
+    /* força alinhamento vertical */
+}

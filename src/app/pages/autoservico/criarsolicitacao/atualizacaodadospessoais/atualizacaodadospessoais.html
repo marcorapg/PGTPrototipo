@@ -1,0 +1,235 @@
+@if(exibirEdicao) {
+
+<div id="divAtualizacaoDadosPessoais">
+    <div class="h3">Atualização de dados pessoais</div>
+
+    <div class="br-message info">
+        <div class="icon"><i class="fas fa-info-circle fa-lg" aria-hidden="true"></i>
+        </div>
+        <div class="content"
+            aria-label="Informação. Seus dados só serão salvos após o preenchimento do primeiro campo do formulário."
+            role="alert"><span class="message-title">Informação</span><br><span class="message-body">Os seus dados
+                pessoais são recuperados do sistema da Receita Federal. Se algum desses dados estiver incorreto é
+                necessário corrigir os dados no sistema da Receita Federal antes de continuar este processo. <br> Para
+                acessar o sistema da Receita federal, <a hfref="https://www.gov.br/receitafederal/pt-br">clique
+                    aqui.</a></span></div>
+    </div>
+
+    <!-- Card Identificação -->
+    <div class="row mb-4 mt-4">
+        <div class="col-12">
+            <div class="subtitulo">
+                Identificação
+                <button class="btn-icone" type="button" aria-label="Ajuda">
+                    <i class="fas fa-info"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="br-card">
+                <div class="card-content">
+
+                    <!-- Linha: CPF + botão -->
+                    <div class="row mb-3">
+                        <div class="col-sm-4 col-lg-2">
+                            <div class="br-input">
+                                <label for="input-icon">CPF</label>
+                                <div class="input-group">
+                                    <div class="input-icon">
+                                        <i class="fas fa-user-tie" aria-hidden="true"></i>
+                                    </div>
+                                    <input id="input-icon" type="text" placeholder="000.000.000-00"
+                                        mask="000.000.000-00" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto d-flex align-items-end">
+                            <button class="br-button circle primary" type="button" (click)="buscarDadosPessoais()"
+                                aria-label="Pesquisar CPF">
+                                <i class="fas fa-search" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Card Dados pessoais -->
+    <div class="row mb-3 mt-3" [hidden]="esconderDadosPessoais">
+        <div class="col-12">
+            <div class="subtitulo">
+                Dados pessoais
+                <button class="btn-icone" type="button" aria-label="Ajuda">
+                    <i class="fas fa-info"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="row" [hidden]="esconderDadosPessoais">
+        <div class="col-12">
+            <div class="br-card">
+                <div class="card-content">
+
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-12">
+                            <div class="br-input">
+                                <label for="nomeBeneficiário">Nome do beneficiário</label>
+                                <input id="nomeBeneficiário" type="text" disabled value="Jorge Freitas Silva" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2 col-lg-2">
+                            <!-- [html-validate-disable input-attributes]-->
+                            <div class="br-datetimepicker" data-mode="single" data-type="text">
+                                <div class="br-input has-icon">
+                                    <label for="simples-input2">Data do nascimento</label>
+                                    <input id="simples-input2" type="text" placeholder="" disabled
+                                        data-input="data-input" value="01/05/2007" />
+                                    <button class="br-button circle small" type="button" aria-label="Abrir Timepicker"
+                                        data-toggle="data-toggle" id="simples-input-btn2" tabindex="-1"
+                                        aria-hidden="true"><i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 col-lg-4">
+                            <div class="br-input">
+                                <label for="naturalidade">Naturalidade</label>
+                                <input id="naturalidade" type="text" disabled value="Belo Horizonte" />
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-6">
+                            <div class="br-input">
+                                <label for="naturalidade">Nome da mãe</label>
+                                <input id="naturalidade" type="text" disabled value="Helena Freitas Silva" />
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 col-lg-4">
+                            <div class="br-input">
+                                <label for="naturalidade">Telefone</label>
+                                <input id="naturalidade" type="text" mask="(00) 00000-0000" value="(31) 99974-2214" />
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 col-lg-4">
+                            <div class="br-input">
+                                <label for="naturalidade">E-mail</label>
+                                <input id="naturalidade" type="text" value="jorge.silva@gmail.com" />
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 col-lg-4">
+                            <div class="br-input">
+                                <label for="naturalidade">Endereço</label>
+                                <input id="naturalidade" type="text" value="Avenida Afonso Pena 193" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+}
+
+@if(!exibirEdicao) {
+
+<div id="divAtualizacaoDadosPessoaisView">
+    <div class="h3">Atualização de dados pessoais</div>
+
+    <!-- Card Identificação -->
+    <div class="row mb-4 mt-4">
+        <div class="col-12">
+            <div class="subtitulo">
+                Identificação
+                <button class="btn-icone" type="button" aria-label="Ajuda">
+                    <i class="fas fa-info"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="br-card">
+                <div class="card-content">
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-12">
+                            <label for="input-icon">CPF</label>
+                            <p>113.642.224-90</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card Dados pessoais -->
+    <div class="row mb-3 mt-3">
+        <div class="col-12">
+            <div class="subtitulo">
+                Dados pessoais
+                <button class="btn-icone" type="button" aria-label="Ajuda">
+                    <i class="fas fa-info"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="br-card">
+                <div class="card-content">
+                    <div class="row mb-2 mt-2">
+                        <div class="col-sm-12 col-lg-12">
+                            <label>Nome do beneficiário</label>
+                            <p>Jorge Freitas Silva</p>
+                        </div>
+                    </div>
+                    <div class="row mb-2 mt-2">
+                        <div class="col-sm-2 col-lg-2">
+                            <label>Data do nascimento</label>
+                            <p>01/05/2007</p>
+                        </div>
+
+                        <div class="col-sm-4 col-lg-4">
+                            <label>Naturalidade</label>
+                            <p>Belo Horizonte</p>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-6">
+                            <label>Nome da mãe</label>
+                            <p>Helena Freitas Silva</p>
+                        </div>
+                    </div>
+                    <div class="row mb-2 mt-2">
+                        <div class="col-sm-2 col-lg-2">
+                            <label>Telefone</label>
+                            <p>(31) 99974-2214</p>
+                        </div>
+                        <div class="col-sm-4 col-lg-4">
+                            <label>E-mail</label>
+                            <p>jorge.silva@gmail.com</p>
+                        </div>
+                        <div class="col-sm-6 col-lg-6">
+                            <label>Endereço</label>
+                            <p>Avenida Afonso Pena 193</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+}

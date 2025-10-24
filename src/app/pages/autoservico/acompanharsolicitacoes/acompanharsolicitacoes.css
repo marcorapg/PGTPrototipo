@@ -1,0 +1,4 @@
+.maior {
+    min-width: 1200px !important; /* ou a largura desejada */
+    max-height: 70% !important;
+}

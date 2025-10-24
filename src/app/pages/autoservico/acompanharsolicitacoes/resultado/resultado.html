@@ -1,0 +1,36 @@
+@if(exibirResultado){
+    <!-- Card Resultado da análise -->
+    <div class="row mb-3 mt-3">
+        <div class="col-12">
+            <div class="subtitulo">
+                Resultado da análise
+                <button class="btn-icone" type="button" aria-label="Ajuda">
+                    <i class="fas fa-info"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="br-card">
+                <div class="card-content">
+    
+                    <div class="row mb-2 mt-2">
+                        <div class="col-sm-12 col-lg-12">
+                            <label>Status</label>
+                            <p>{{status}}</p>
+                        </div>
+                    </div>
+    
+                    <div class="row mb-2 mt-2">
+                        <div class="col-sm-12 col-lg-12">
+                            <label>Justificativa</label>
+                            <p>{{justificava}}</p>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+}

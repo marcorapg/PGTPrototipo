@@ -1,0 +1,420 @@
+@if(exibirEdicao) {
+<div id="desbloqueio">
+    <div class="h3">Desbloqueio</div>
+
+    <!-- Card Identificação -->
+    <div class="row mb-3 mt-3">
+        <div class="col-12">
+            <div class="subtitulo">
+                Identificação
+                <button class="btn-icone" type="button" aria-label="Ajuda">
+                    <i class="fas fa-info"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="br-card">
+                <div class="card-content">
+
+                    <div class="row mt-2 mb-2">
+                        <div class="col-sm-12 col-lg-12">
+                            <div class="br-input">
+                                <label for="input-default">Código do beneficiário</label>
+                                <input id="input-default" type="text" value="08979513246" disabled="disabled" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-2 mb-2">
+                        <div class="col-sm-12 col-lg-4">
+                            <div class="br-input">
+                                <label for="cpfTitular">CPF do titular</label>
+                                <input id="cpfTitular" type="text" value="111.111.111-11" disabled />
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-lg-8">
+                            <div class="br-input">
+                                <label for="nomeTitular">Nome do titular</label>
+                                <input id="nomeTitular" type="text" value="Jorge Freitas Silva" disabled />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-2 mb-2">
+                        <div class="col-sm-12 col-lg-4">
+                            <div class="br-input">
+                                <label for="cpfConjuge">CPF do cônjuge</label>
+                                <input id="cpfConjuge" type="text" value="222.222.222-22" disabled />
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-8">
+                            <div class="br-input">
+                                <label for="nomeConjuge">Nome do cônjuge</label>
+                                <input id="nomeConjuge" type="text" value="Renata Lopes Silva" disabled />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card Bloqueio -->
+    <div class="row mb-3 mt-3">
+        <div class="col-12">
+            <div class="subtitulo">
+                Bloqueio
+                <button class="btn-icone" type="button" aria-label="Ajuda">
+                    <i class="fas fa-info"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="br-card">
+                <div class="card-content">
+
+                    <div class="row mt-2 mb-2">
+                        <div class="col-sm-12 col-lg-3">
+                            <div class="br-datetimepicker" data-mode="single" data-type="text">
+                                <div class="br-input has-icon">
+                                    <label for="simples-input2">Data do bloqueio</label>
+                                    <input id="simples-input2" type="text" placeholder="" data-input="data-input"
+                                        value="01/05/2007" disabled />
+                                    <button class="br-button circle small" type="button" aria-label="Abrir Timepicker"
+                                        data-toggle="data-toggle" id="simples-input-btn2" tabindex="-1"
+                                        aria-hidden="true"><i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-3">
+                            <div class="br-select">
+                                <div class="br-input">
+                                    <label for="situacaoBloqueio">Situação de bloqueio</label>
+                                    <input id="situacaoBloqueio" type="text" placeholder="Selecione o item" disabled />
+                                    <button class="br-button" type="button" aria-label="Exibir lista" tabindex="-1"
+                                        data-trigger="data-trigger"><i class="fas fa-angle-down" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div class="br-list" tabindex="0">
+                                    <div class="br-item selected" tabindex="-1">
+                                        <div class="br-radio">
+                                            <input id="situacaoBloqueio1" type="radio" name="situacaoBloqueio1"
+                                                value="situacaoBloqueio1" />
+                                            <label for="situacaoBloqueio1">Sim</label>
+                                        </div>
+                                    </div>
+                                    <div class="br-item" tabindex="-1">
+                                        <div class="br-radio">
+                                            <input id="situacaoBloqueio2" type="radio" name="situacaoBloqueio1"
+                                                value="situacaoBloqueio2" />
+                                            <label for="situacaoBloqueio2">Não</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-3">
+                            <div class="br-select">
+                                <div class="br-input">
+                                    <label for="tipoSubBloqueio">Tipo de subbloqueio</label>
+                                    <input id="tipoSubBloqueio" type="text" placeholder="Selecione o item" value=""
+                                        disabled />
+                                    <button class="br-button" type="button" aria-label="Exibir lista" tabindex="-1"
+                                        data-trigger="data-trigger"><i class="fas fa-angle-down" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div class="br-list" tabindex="0">
+                                    <div class="br-item selected" tabindex="-1">
+                                        <div class="br-radio">
+                                            <input id="situacaoBloqueio1" type="radio" name="estados-simples"
+                                                value="situacaoBloqueio1" />
+                                            <label for="situacaoBloqueio1">Tipo 1</label>
+                                        </div>
+                                    </div>
+                                    <div class="br-item" tabindex="-1">
+                                        <div class="br-radio">
+                                            <input id="situacaoBloqueio2" type="radio" name="estados-simples"
+                                                value="situacaoBloqueio2" />
+                                            <label for="situacaoBloqueio2">Tipo 2</label>
+                                        </div>
+                                    </div>
+                                    <div class="br-item" tabindex="-1">
+                                        <div class="br-radio">
+                                            <input id="situacaoBloqueio2" type="radio" name="estados-simples"
+                                                value="situacaoBloqueio2" />
+                                            <label for="situacaoBloqueio2">Tipo 3</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-3">
+                            <div class="br-select">
+                                <div class="br-input">
+                                    <label for="situacaoBloqueio">Tipo de transação</label>
+                                    <input id="situacaoBloqueio" type="text" placeholder="Selecione o item" value=""
+                                        disabled />
+                                    <button class="br-button" type="button" aria-label="Exibir lista" tabindex="-1"
+                                        data-trigger="data-trigger"><i class="fas fa-angle-down" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div class="br-list" tabindex="0">
+                                    <div class="br-item selected" tabindex="-1">
+                                        <div class="br-radio">
+                                            <input id="situacaoBloqueio1" type="radio" name="estados-simples"
+                                                value="situacaoBloqueio1" />
+                                            <label for="situacaoBloqueio1">Tipo 1</label>
+                                        </div>
+                                    </div>
+                                    <div class="br-item" tabindex="-1">
+                                        <div class="br-radio">
+                                            <input id="situacaoBloqueio2" type="radio" name="estados-simples"
+                                                value="situacaoBloqueio2" />
+                                            <label for="situacaoBloqueio2">Tipo 2</label>
+                                        </div>
+                                    </div>
+                                    <div class="br-item" tabindex="-1">
+                                        <div class="br-radio">
+                                            <input id="situacaoBloqueio2" type="radio" name="estados-simples"
+                                                value="situacaoBloqueio2" />
+                                            <label for="situacaoBloqueio2">Tipo 3</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-2 mt-2">
+                        <div class="col-sm-12 col-lg-12">
+                            <div class="br-textarea">
+                                <label for="textarea-id1">Observação do bloqueio</label>
+                                <textarea id="textarea-id1" value=""
+                                    disabled>Exemplo de observação do bloqueio</textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card Desbloqueio -->
+    <div class="row mb-3 mt-3">
+        <div class="col-12">
+            <div class="subtitulo">
+                Desbloqueio
+                <button class="btn-icone" type="button" aria-label="Ajuda">
+                    <i class="fas fa-info"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="br-card">
+                <div class="card-content">
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="br-textarea">
+                                <label for="textarea-id2">Justificativa</label>
+                                <textarea id="textarea-id2"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <div class="br-upload">
+                                <label class="upload-label" for="single-file"><span>Envio de arquivo
+                                        comprovante</span></label>
+                                <input class="upload-input" id="single-file" type="file" aria-hidden="null"
+                                    aria-label="enviar arquivo" />
+                                <div class="upload-list"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+}
+
+@if(!exibirEdicao){
+<div id="desbloqueio">
+    <div class="h3">Desbloqueio</div>
+
+    <!-- Card Identificação -->
+    <div class="row mb-3 mt-3">
+        <div class="col-12">
+            <div class="subtitulo">
+                Identificação
+                <button class="btn-icone" type="button" aria-label="Ajuda">
+                    <i class="fas fa-info"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="br-card">
+                <div class="card-content">
+
+                    <div class="row mb-2 mt-2">
+                        <div class="col-sm-8 col-lg-12">
+                            <label>Código do beneficiário</label>
+                            <p>08979513246</p>
+                        </div>
+                    </div>
+
+                    <div class="row mb-2 mt-2">
+                        <div class="col-sm-8 col-lg-4">
+                            <label>CPF do titular</label>
+                            <p>111.111.111-11</p>
+                        </div>
+
+                        <div class="col-sm-8 col-lg-8">
+                            <label>Nome do titular</label>
+                            <p>Jorge Freitas Silva</p>
+                        </div>
+                    </div>
+
+                    <div class="row mb-2 mt-2">
+                        <div class="col-sm-8 col-lg-4">
+                            <label>CPF do cônjuge</label>
+                            <p>222.222.222-22</p>
+                        </div>
+
+                        <div class="col-sm-8 col-lg-8">
+                            <label>Nome do cônjuge</label>
+                            <p>Renata Lopes Silva</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card Bloqueio -->
+    <div class="row mb-3 mt-3">
+        <div class="col-12">
+            <div class="subtitulo">
+                Bloqueio
+                <button class="btn-icone" type="button" aria-label="Ajuda">
+                    <i class="fas fa-info"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="br-card">
+                <div class="card-content">
+
+                    <div class="row mb-2 mt-2">
+                        <div class="col-3">
+                            <label>Data do bloqueio</label>
+                            <p>05/09/2025</p>
+                        </div>
+                        <div class="col-3">
+                            <label>Situação de bloqueio</label>
+                            <p>Sim</p>
+                        </div>
+                        <div class="col-3">
+                            <label>Tipo de subbloqueio</label>
+                            <p>Tipo 1</p>
+                        </div>
+                        <div class="col-3">
+                            <label>Tipo de transação</label>
+                            <p>Tipo3</p>
+                        </div>
+                    </div>
+
+                    <div class="row mb-2 mt-2">
+                        <div class="col-12">
+                            <label for="textarea-id1">Observação do bloqueio</label>
+                            <p>Exemplo de observação do bloqueio</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card Desbloqueio -->
+    <div class="row mb-3 mt-3">
+        <div class="col-12">
+            <div class="subtitulo">
+                Desbloqueio
+                <button class="btn-icone" type="button" aria-label="Ajuda">
+                    <i class="fas fa-info"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="br-card">
+                <div class="card-content">
+
+                    <div class="row mb-2 mt-2">
+                        <div class="col-12">
+                            <div class="br-textarea">
+                                <label for="textarea-id2">Justificativa</label>
+                                <p class="mb-1 mt-1">Bloqueio realizado de forma irregular. Documentos em anexo.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-2 mt-2">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+
+                            <div class="br-list" role="list">
+                                <div class="header">
+                                    <div class="title">Anexos</div>
+                                </div><span class="br-divider"></span>
+                                <div class="br-item" role="listitem">
+                                    <div class="row align-items-center">
+                                        <div class="col-auto"><i class="fa fa-paperclip" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="col">
+                                            <a href="">Anexo 1</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="br-item" role="listitem">
+                                    <div class="row align-items-center">
+                                        <div class="col-auto"><i class="fa fa-paperclip" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="col">
+                                            <a href="">Anexo 2</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="br-item" role="listitem">
+                                    <div class="row align-items-center">
+                                        <div class="col-auto"><i class="fa fa-paperclip" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="col">
+                                            <a href="">Anexo 3</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+}

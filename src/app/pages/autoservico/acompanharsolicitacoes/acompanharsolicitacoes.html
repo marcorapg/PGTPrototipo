@@ -1,0 +1,277 @@
+<app-breadcrumb [breadcrumbs]="pageBreadcrumbs"></app-breadcrumb>
+
+<h3>Acompanhamento de requerimentos</h3>
+
+<div class="br-table" data-search="data-search" data-selection="data-selection" data-collapse="data-collapse"
+    data-random="data-random">
+    <div class="table-header">
+        <div class="top-bar">
+            <div class="table-title">Requerimentos cadastrados</div>
+            <div class="actions-trigger text-nowrap">
+                <button class="br-button circle" type="button" id="button-dropdown-density" title="Ver mais opções"
+                    data-toggle="dropdown" data-target="target01-40583" aria-label="Definir densidade da tabela"
+                    aria-haspopup="true" aria-live="polite"><i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+                </button>
+                <div class="br-list" id="target01-40583" role="menu" aria-labelledby="button-dropdown-density"
+                    hidden="hidden">
+                    <button class="br-item" type="button" data-density="small" role="menuitem">Densidade alta
+                    </button><span class="br-divider"></span>
+                    <button class="br-item" type="button" data-density="medium" role="menuitem">Densidade média
+                    </button><span class="br-divider"></span>
+                    <button class="br-item" type="button" data-density="large" role="menuitem">Densidade baixa
+                    </button>
+                </div>
+            </div>
+            <div class="search-trigger">
+                <button class="br-button circle" type="button" id="button-input-search" data-toggle="search"
+                    aria-label="Abrir busca" aria-controls="table-searchbox-40583"><i class="fas fa-search"
+                        aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+        <div class="search-bar">
+            <div class="br-input">
+                <label for="table-searchbox-40583">Buscar na tabela</label>
+                <input id="table-searchbox-40583" type="search" placeholder="Buscar na tabela"
+                    aria-labelledby="button-input-search" aria-label="Buscar na tabela" />
+                <button class="br-button" type="button" aria-label="Buscar"><i class="fas fa-search"
+                        aria-hidden="true"></i>
+                </button>
+            </div>
+            <button class="br-button circle" type="button" data-dismiss="search" aria-label="Fechar busca"><i
+                    class="fas fa-times" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="selected-bar">
+            <div class="info"><span class="count">0</span><span class="text">item selecionado</span></div>
+            <div class="actions-trigger text-nowrap">
+                <button class="br-button circle inverted" type="button" id="button-dropdown-selection"
+                    data-toggle="dropdown" data-target="target02-40583" aria-controls="target02-40583"
+                    aria-label="Ver mais opções de ação" aria-haspopup="true"><i class="fas fa-ellipsis-v"
+                        aria-hidden="true"></i>
+                </button>
+                <div class="br-list" id="target02-40583" role="menu" aria-labelledby="button-dropdown-selection"
+                    hidden="hidden">
+                    <button class="br-item" type="button" data-toggle="" role="menuitem">Ação 1
+                    </button><span class="br-divider"></span>
+                    <button class="br-item" type="button" role="menuitem">Ação 2
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <table>
+        <caption>Solicitações cadastradas</caption>
+        <thead>
+            <tr>
+                <th class="border-right border-left" scope="col">Número do requerimento</th>
+                <th class="border-right border-left" scope="col">Tipo do serviço</th>
+                <th class="border-right border-left" scope="col">Data do requerimento</th>
+                <th class="border-right border-left" scope="col">Status</th>
+                <th class="border-right border-left" scope="col">Detalhar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="border-right border-left">13549871315</td>
+                <td class="border-right border-left">Desbloqueio</td>
+                <td class="border-right border-left">27/08/2025</td>
+                <td class="border-right border-left">Em análise</td>
+                <td class="border-right border-left">
+                    <div class="actionscrimutil">
+                        <button class="br-button circle secondary dark-mode mr-3 modal-btn" type="button"
+                            id="buttonactivatemodal1" data-toggle="scrim" data-target="#scrimutilexamplemodal"
+                            (click)="tratarConteudoModal('Desbloqueio')"><i class="fas fa-search"
+                                aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="border-right border-left">87154931513</td>
+                <td class="border-right border-left">Desbloqueio</td>
+                <td class="border-right border-left">27/08/2025</td>
+                <td class="border-right border-left">Processada</td>
+                <td class="border-right border-left">
+                    <div class="actionscrimutil">
+                        <button class="br-button circle secondary dark-mode mr-3 modal-btn" type="button"
+                            id="buttonactivatemodal2" data-toggle="scrim" data-target="#scrimutilexamplemodal"
+                            (click)="tratarConteudoModal('Desbloqueio')"><i class="fas fa-search"
+                                aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="border-right border-left">87154931513</td>
+                <td class="border-right border-left">Transferência de assentamento</td>
+                <td class="border-right border-left">27/08/2025</td>
+                <td class="border-right border-left">Cancelada</td>
+                <td class="border-right border-left">
+                    <div class="actionscrimutil">
+                        <button class="br-button circle secondary dark-mode mr-3 modal-btn" type="button"
+                            id="buttonactivatemodal2" data-toggle="scrim" data-target="#scrimutilexamplemodal"
+                            (click)="tratarConteudoModal('Transferência de assentamento')"><i class="fas fa-search"
+                                aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="border-right border-left">87154931513</td>
+                <td class="border-right border-left">Atualização de unidade familiar</td>
+                <td class="border-right border-left">27/08/2025</td>
+                <td class="border-right border-left">Processada com pendências</td>
+                <td class="border-right border-left">
+                    <div class="actionscrimutil">
+                        <button class="br-button circle secondary dark-mode mr-3 modal-btn" type="button"
+                            id="buttonactivatemodal3" data-toggle="scrim" data-target="#scrimutilexamplemodal"
+                            (click)="tratarConteudoModal('Atualização de unidade familiar')"><i class="fas fa-search"
+                                aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="border-right border-left">87154931513</td>
+                <td class="border-right border-left">Atualização de dados pessoais</td>
+                <td class="border-right border-left">27/08/2025</td>
+                <td class="border-right border-left">Deferida</td>
+                <td class="border-right border-left">
+                    <div class="actionscrimutil">
+                        <button class="br-button circle secondary dark-mode mr-3 modal-btn" type="button"
+                            id="buttonactivatemodal4" data-toggle="scrim" data-target="#scrimutilexamplemodal"
+                            (click)="tratarConteudoModal('Atualização de dados pessoais')"><i class="fas fa-search"
+                                aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="border-right border-left">87154931513</td>
+                <td class="border-right border-left">Atualização de situação</td>
+                <td class="border-right border-left">27/08/2025</td>
+                <td class="border-right border-left">Indeferida</td>
+                <td class="border-right border-left">
+                    <div class="actionscrimutil">
+                        <button class="br-button circle secondary dark-mode mr-3 modal-btn" type="button"
+                            id="buttonactivatemodal5" data-toggle="scrim" data-target="#scrimutilexamplemodal"
+                            (click)="tratarConteudoModal('Atualização de situação')"><i class="fas fa-search"
+                                aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="table-footer">
+        <nav class="br-pagination" aria-label="paginação" data-total="50" data-current="1" data-per-page="20">
+            <div class="pagination-per-page">
+                <div class="br-select">
+                    <div class="br-input">
+                        <label for="per-page-selection-random-30313">Exibir</label>
+                        <input id="per-page-selection-random-30313" type="text" placeholder=" " />
+                        <button class="br-button" type="button" aria-label="Exibir lista" tabindex="-1"
+                            data-trigger="data-trigger"><i class="fas fa-angle-down" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <div class="br-list" tabindex="0">
+                        <div class="br-item" tabindex="-1">
+                            <div class="br-radio">
+                                <input id="per-page-10-random-30313" type="radio" name="per-page-random-30313"
+                                    value="per-page-10-random-30313" checked="checked" />
+                                <label for="per-page-10-random-30313">10</label>
+                            </div>
+                        </div>
+                        <div class="br-item" tabindex="-1">
+                            <div class="br-radio">
+                                <input id="per-page-20-random-30313" type="radio" name="per-page-random-30313"
+                                    value="per-page-20-random-30313" />
+                                <label for="per-page-20-random-30313">20</label>
+                            </div>
+                        </div>
+                        <div class="br-item" tabindex="-1">
+                            <div class="br-radio">
+                                <input id="per-page-30-random-30313" type="radio" name="per-page-random-30313"
+                                    value="per-page-30-random-30313" />
+                                <label for="per-page-30-random-30313">30</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><span class="br-divider d-none d-sm-block mx-3"></span>
+            <div class="pagination-information d-none d-sm-flex"><span class="current">1</span>&ndash;<span
+                    class="per-page">20</span>&nbsp;de&nbsp;<span class="total">50</span>&nbsp;itens</div>
+            <div class="pagination-go-to-page d-none d-sm-flex ml-auto">
+                <div class="br-select">
+                    <div class="br-input">
+                        <label for="go-to-selection-random-39004">Página</label>
+                        <input id="go-to-selection-random-39004" type="text" placeholder=" " />
+                        <button class="br-button" type="button" aria-label="Exibir lista" tabindex="-1"
+                            data-trigger="data-trigger"><i class="fas fa-angle-down" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <div class="br-list" tabindex="0">
+                        <div class="br-item" tabindex="-1">
+                            <div class="br-radio">
+                                <input id="go-to-1-random-39004" type="radio" name="go-to-random-39004"
+                                    value="go-to-1-random-39004" checked="checked" />
+                                <label for="go-to-1-random-39004">1</label>
+                            </div>
+                        </div>
+                        <div class="br-item" tabindex="-1">
+                            <div class="br-radio">
+                                <input id="go-to-2-random-39004" type="radio" name="go-to-random-39004"
+                                    value="go-to-2-random-39004" />
+                                <label for="go-to-2-random-39004">2</label>
+                            </div>
+                        </div>
+                        <div class="br-item" tabindex="-1">
+                            <div class="br-radio">
+                                <input id="go-to-3-random-39004" type="radio" name="go-to-random-39004"
+                                    value="go-to-3-random-39004" />
+                                <label for="go-to-3-random-39004">3</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><span class="br-divider d-none d-sm-block mx-3"></span>
+            <div class="pagination-arrows ml-auto ml-sm-0">
+                <button class="br-button circle" type="button" aria-label="Voltar página"><i class="fas fa-angle-left"
+                        aria-hidden="true"></i>
+                </button>
+                <button class="br-button circle" type="button" aria-label="Página seguinte"><i
+                        class="fas fa-angle-right" aria-hidden="true"></i>
+                </button>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<div class="col-12 mt-3 text-right">
+    <a routerLink="/autoservico"><button class="br-button primary mr-3" type="button">Voltar</button></a>
+</div>
+
+<div class="br-scrim foco" id="scrimexample" data-trigger="scrim">
+    <div class="br-modal maior">
+        <div class="br-modal-dialog">
+            <div class="br-modal-content">
+                <div class="br-modal-body">
+                    <div style="width: 99%;">
+                        <app-transferenciaassentamento [exibirEdicao]="false"
+                            [hidden]="esconderTransferenciaAssentamento"></app-transferenciaassentamento>
+                        <app-desbloqueio [exibirEdicao]="false" [hidden]="esconderDesbloqueio"></app-desbloqueio>
+                        <app-atualizacaounidadefamiliar [exibirEdicao]="false"
+                            [hidden]="esconderAtualizacaoUnidadeFamiliar"></app-atualizacaounidadefamiliar>
+                        <app-atualizacaodadospessoais [exibirEdicao]="false"
+                            [hidden]="esconderAtualizacaoDadosPessoais"></app-atualizacaodadospessoais>
+                        <app-atualizacaosituacao [exibirEdicao]="false"
+                            [hidden]="esconderAtualizacaoSituacao"></app-atualizacaosituacao>
+                        <app-resultado [exibirResultado]="exibirResultado" [status]="status"
+                            [justificava]="justificativa"></app-resultado>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

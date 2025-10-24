@@ -1,0 +1,428 @@
+@if(exibirEdicao){
+
+<div id="transferenciaAssentamento">
+    <div class="h3">Transferência de assentamento</div>
+
+    <!-- Card Identificação -->
+    <div class="row mb-3 mt-3">
+        <div class="col-12">
+            <div class="subtitulo">
+                Identificação
+                <button class="btn-icone" type="button" aria-label="Ajuda">
+                    <i class="fas fa-info"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="br-card">
+                <div class="card-content">
+
+                    <div class="row">
+                        <div class="col-sm-8 col-lg-12">
+                            <div class="br-input">
+                                <label for="input-default">Código do beneficiário</label>
+                                <input id="input-default" type="text" value="08979513246" disabled="disabled" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-8 col-lg-4">
+                            <div class="br-input">
+                                <label for="cpfTitular">CPF do titular</label>
+                                <input id="cpfTitular" type="text" value="111.111.111-11" disabled />
+                            </div>
+                        </div>
+
+                        <div class="col-sm-8 col-lg-8">
+                            <div class="br-input">
+                                <label for="nomeTitular">Nome do titular</label>
+                                <input id="nomeTitular" type="text" value="Jorge Freitas Silva" disabled />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-8 col-lg-4">
+                            <div class="br-input">
+                                <label for="cpfConjuge">CPF do cônjuge</label>
+                                <input id="cpfConjuge" type="text" value="222.222.222-22" disabled />
+                            </div>
+                        </div>
+
+                        <div class="col-sm-8 col-lg-8">
+                            <div class="br-input">
+                                <label for="nomeConjuge">Nome do cônjuge</label>
+                                <input id="nomeConjuge" type="text" value="Renata Lopes Silva" disabled />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card Projeto de assentamento -->
+    <div class="row mb-3 mt-3">
+        <div class="col-12">
+            <div class="subtitulo">
+                Projeto de assentamento
+                <button class="btn-icone" type="button" aria-label="Ajuda">
+                    <i class="fas fa-info"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="br-card">
+                <div class="card-content">
+
+                    <div class="row">
+                        <div class="col-sm-8 col-lg-3">
+                            <div class="br-select">
+                                <div class="br-input">
+                                    <label for="ufTransferenciaAssentamento">UF</label>
+                                    <input id="ufTransferenciaAssentamento" type="text" placeholder="Selecione o item"
+                                        value="ufta1" />
+                                    <button class="br-button" type="button" aria-label="Exibir lista" tabindex="-1"
+                                        data-trigger="data-trigger"><i class="fas fa-angle-down" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div class="br-list" tabindex="0">
+                                    <div class="br-item selected" tabindex="-1">
+                                        <div class="br-radio">
+                                            <input id="ufta1" type="radio" name="estados-simples" value="ufta1" />
+                                            <label for="ufta1">Acre</label>
+                                        </div>
+                                    </div>
+                                    <div class="br-item" tabindex="-1">
+                                        <div class="br-radio">
+                                            <input id="ufta2" type="radio" name="estados-simples" value="ufta2" />
+                                            <label for="ufta2">Alagoas</label>
+                                        </div>
+                                    </div>
+                                    <div class="br-item" tabindex="-1">
+                                        <div class="br-radio">
+                                            <input id="ufta3" type="radio" name="estados-simples" value="ufta3" />
+                                            <label for="ufta3">Amapá</label>
+                                        </div>
+                                    </div>
+                                    <div class="br-item" tabindex="-1">
+                                        <div class="br-radio">
+                                            <input id="ufta4" type="radio" name="estados-simples" value="ufta4" />
+                                            <label for="ufta4">Amazonas</label>
+                                        </div>
+                                    </div>
+                                    <div class="br-item" tabindex="-1">
+                                        <div class="br-radio">
+                                            <input id="ufta5" type="radio" name="estados-simples" value="ufta5" />
+                                            <label for="ufta5">Bahia</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-8 col-lg-4">
+                            <div class="br-select">
+                                <div class="br-input">
+                                    <label for="ufMunicipioTransferenciaAssentamento">Município</label>
+                                    <input id="ufMunicipioTransferenciaAssentamento" type="text"
+                                        placeholder="Selecione o item" value="ufm1" />
+                                    <button class="br-button" type="button" aria-label="Exibir lista" tabindex="-1"
+                                        data-trigger="data-trigger"><i class="fas fa-angle-down" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div class="br-list" tabindex="0">
+                                    <div class="br-item selected" tabindex="-1">
+                                        <div class="br-radio">
+                                            <input id="ufm1" type="radio" name="estados-simples" value="ufm1" />
+                                            <label for="ufm1">Acrelândia</label>
+                                        </div>
+                                    </div>
+                                    <div class="br-item" tabindex="-1">
+                                        <div class="br-radio">
+                                            <input id="ufm2" type="radio" name="estados-simples" value="ufm2" />
+                                            <label for="ufm2">Assis Brasil</label>
+                                        </div>
+                                    </div>
+                                    <div class="br-item" tabindex="-1">
+                                        <div class="br-radio">
+                                            <input id="ufm3" type="radio" name="estados-simples" value="ufm3" />
+                                            <label for="ufm3">Brasiléia</label>
+                                        </div>
+                                    </div>
+                                    <div class="br-item" tabindex="-1">
+                                        <div class="br-radio">
+                                            <input id="ufm4" type="radio" name="estados-simples" value="ufm4" />
+                                            <label for="ufm4">Bujari</label>
+                                        </div>
+                                    </div>
+                                    <div class="br-item" tabindex="-1">
+                                        <div class="br-radio">
+                                            <input id="ufm5" type="radio" name="estados-simples" value="ufm5" />
+                                            <label for="ufm5">Capixaba</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-8 col-lg-5">
+                            <div class="br-select">
+                                <div class="br-input">
+                                    <label for="ufProjetoAssentamento">Projeto de assentamento</label>
+                                    <input id="ufProjetoAssentamento" type="text" placeholder="Selecione o item"
+                                        value="ufpa1" />
+                                    <button class="br-button" type="button" aria-label="Exibir lista" tabindex="-1"
+                                        data-trigger="data-trigger"><i class="fas fa-angle-down" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div class="br-list" tabindex="0">
+                                    <div class="br-item selected" tabindex="-1">
+                                        <div class="br-radio">
+                                            <input id="ufpa1" type="radio" name="estados-simples" value="ufpa1" />
+                                            <label for="ufpa1">Projeto de assentamento de Acrelândia</label>
+                                        </div>
+                                    </div>
+                                    <div class="br-item" tabindex="-1">
+                                        <div class="br-radio">
+                                            <input id="ufpa2" type="radio" name="estados-simples" value="ufpa2" />
+                                            <label for="ufpa2">Projeto de assentamento de Capixaba</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-8 col-lg-7">
+                            <div class="br-input">
+                                <label for="cpfConjuge">Número do lote</label>
+                                <input id="cpfConjuge" type="text" value="133" />
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-4 col-lg-3 mb-5">
+                            <!-- [html-validate-disable input-attributes]-->
+                            <div class="br-datetimepicker" data-mode="single" data-type="text">
+                                <div class="br-input has-icon">
+                                    <label for="simples-input">Data de início da ocupação</label>
+                                    <input id="simples-input" type="text" placeholder="" data-input="data-input"
+                                        value="01/05/2007" />
+                                    <button class="br-button circle small" type="button" aria-label="Abrir Timepicker"
+                                        data-toggle="data-toggle" id="simples-input-btn" tabindex="-1"
+                                        aria-hidden="true"><i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card Comprovante -->
+    <div class="row mb-3 mt-3">
+        <div class="col-12">
+            <div class="subtitulo">
+                Comprovante
+                <button class="btn-icone" type="button" aria-label="Ajuda">
+                    <i class="fas fa-info"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="br-card">
+                <div class="card-content">
+
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <div class="br-upload">
+                                <label class="upload-label" for="single-file"><span>Envio de arquivo
+                                        comprovante</span></label>
+                                <input class="upload-input" id="single-file" type="file" aria-hidden="null"
+                                    aria-label="enviar arquivo" />
+                                <div class="upload-list"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+}
+
+@if(!exibirEdicao){
+
+<div id="transferenciaAssentamentoView">
+    <div class="h3">Transferência de assentamento</div>
+
+    <!-- Card Identificação -->
+    <div class="row mb-3 mt-3">
+        <div class="col-12">
+            <div class="subtitulo">
+                Identificação
+                <button class="btn-icone" type="button" aria-label="Ajuda">
+                    <i class="fas fa-info"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="br-card">
+                <div class="card-content">
+
+                    <div class="row mb-2 mt-2">
+                        <div class="col-sm-12 col-lg-12">
+                            <label>Código do beneficiário</label>
+                            <p>08979513246</p>
+                        </div>
+                    </div>
+
+                    <div class="row mb-2 mt-2">
+                        <div class="col-sm-4 col-lg-4">
+                            <label>CPF do titular</label>
+                            <p>111.111.111-11</p>
+                        </div>
+
+                        <div class="col-sm-8 col-lg-8">
+                            <label>Nome do titular</label>
+                            <p>Jorge Freitas Silva</p>
+                        </div>
+                    </div>
+
+                    <div class="row mb-2 mt-2">
+                        <div class="col-sm-4 col-lg-4">
+                            <label>CPF do cônjuge</label>
+                            <p>222.222.222-22</p>
+                        </div>
+
+                        <div class="col-sm-8 col-lg-8">
+                            <label>Nome do cônjuge</label>
+                            <p>Renata Lopes Silva</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card Projeto de assentamento -->
+    <div class="row mb-3 mt-3">
+        <div class="col-12">
+            <div class="subtitulo">
+                Projeto de assentamento
+                <button class="btn-icone" type="button" aria-label="Ajuda">
+                    <i class="fas fa-info"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="br-card">
+                <div class="card-content">
+
+                    <div class="row mb-2 mt-2">
+                        <div class="col-sm-3 col-lg-3">
+                            <label>UF</label>
+                            <p>Minas Gerais</p>
+                        </div>
+
+                        <div class="col-sm-4 col-lg-4">
+                            <label>Município</label>
+                            <p>Belo Horizonte</p>
+                        </div>
+
+                        <div class="col-sm-8 col-lg-5">
+                            <label>Projeto de assentamento</label>
+                            <p>Projeto de assentamento de Capixaba</p>
+                        </div>
+                    </div>
+
+                    <div class="row mb-2 mt-2">
+                        <div class="col-sm-8 col-lg-7">
+                            <label for="cpfConjuge">Número do lote</label>
+                            <p>133</p>
+                        </div>
+
+                        <div class="col-sm-6 col-md-4 col-lg-3 mb-5">
+                            <label>Data de início da ocupação</label>
+                            <p>27/01/2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card Comprovante -->
+    <div class="row mb-3 mt-3">
+        <div class="col-12">
+            <div class="subtitulo">
+                Comprovante
+                <button class="btn-icone" type="button" aria-label="Ajuda">
+                    <i class="fas fa-info"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="br-card">
+                <div class="card-content">
+                    <div class="row mb-2 mt-2">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <div class="br-list" role="list">
+                                <div class="header">
+                                    <div class="title">Anexos</div>
+                                </div><span class="br-divider"></span>
+                                <div class="br-item" role="listitem">
+                                    <div class="row align-items-center">
+                                        <div class="col-auto"><i class="fa fa-paperclip" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="col">
+                                            <a href="">Anexo 1</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="br-item" role="listitem">
+                                    <div class="row align-items-center">
+                                        <div class="col-auto"><i class="fa fa-paperclip" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="col">
+                                            <a href="">Anexo 2</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="br-item" role="listitem">
+                                    <div class="row align-items-center">
+                                        <div class="col-auto"><i class="fa fa-paperclip" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="col">
+                                            <a href="">Anexo 3</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+}

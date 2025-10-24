@@ -1,0 +1,14 @@
+  .wizard-sample-1 {
+    min-height: 1200px;
+    height: auto;
+  }
+
+  .br-wizard .wizard-form,
+  .br-wizard .wizard-panel,
+  .br-wizard .wizard-panel-content {
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+  } 
+
+  

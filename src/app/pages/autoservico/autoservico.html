@@ -1,4 +1,5 @@
 <app-breadcrumb [breadcrumbs]="pageBreadcrumbs"></app-breadcrumb>
+
 <div class="main-content pl-sm-3 mt-4" id="main-content">
     <h1>Autosserviço</h1>
     <p>Selecione a opção que deseja acessar:</p>
@@ -10,12 +11,12 @@
                     <div class="d-flex align-items-center">
                         <i class="fas fa-plus-circle fa-3x" aria-hidden="true"></i>
                         <div class="ml-3">
-                            <div class="text-weight-semi-bold text-up-02">Incluir nova solicitação</div>
+                            <div class="text-weight-semi-bold text-up-02">Incluir novo requerimento</div>
                         </div>
                     </div>
                 </div>
                 <div class="card-content flex-grow-1">
-                    <p>Selecione esta opção se você deseja cadastrar uma nova solicitação.</p>
+                    <p>Selecione esta opção se você deseja cadastrar um novo requerimento.</p>
                 </div>
                 <div class="card-footer mt-auto">
                     <div class="d-flex justify-content-center">
@@ -32,21 +33,21 @@
                     <div class="d-flex align-items-center">
                         <i class="fas fa-clipboard-list fa-3x" aria-hidden="true"></i>
                         <div class="ml-3">
-                            <div class="text-weight-semi-bold text-up-02">Consultar andamento de solicitação
+                            <div class="text-weight-semi-bold text-up-02">Acompanhar requerimentos
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="card-content flex-grow-1">
-                    <p>Selecione esta opção se você desejar consultar o andamento de uma solicitação
-                        cadastrada anteriormente.</p>
+                    <p>Selecione esta opção se você desejar consultar o andamento de um requerimento
+                        cadastrado anteriormente.</p>
                 </div>
                 <div class="card-footer mt-auto">
                     <div class="d-flex justify-content-center">
-                        <button class="br-button primary mr-3" type="button">Acessar</button>
+                        <a routerLink="/autoservico/acompanharsolicitacoes"><button class="br-button primary mr-3" type="button">Acessar</button></a>
                     </div>
                 </div>
             </div>
-        </div>
+        </div>     
     </div>
 </div>
